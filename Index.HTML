@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travelora - Personalized Travel Planner</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="hero">
+<nav>
+<h1>🌍 Travelora</h1>
+<ul>
+<li>Home</li>
+<li>Destinations</li>
+<li>Packages</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<div class="hero-content">
+<h2>Plan Your Dream Vacation ✈️</h2>
+<p>Explore India and International Destinations with AI Powered Planning</p>
+
+<div class="search-box">
+<input type="text" id="destination" placeholder="Enter Destination">
+<select id="country">
+<option>India</option>
+<option>France</option>
+<option>Italy</option>
+<option>Germany</option>
+<option>Switzerland</option>
+</select>
+
+<select id="budget">
+<option>₹20,000</option>
+<option>₹50,000</option>
+<option>₹1,00,000</option>
+</select>
+
+<button onclick="generateTrip()">Generate Trip</button>
+</div>
+</div>
+</header>
+
+<section class="popular">
+<h2>Popular Indian Destinations</h2>
+
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop">
+<h3>Goa</h3>
+<p>Beach Paradise</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1200&auto=format&fit=crop">
+<h3>Ooty</h3>
+<p>Hill Station</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200&auto=format&fit=crop">
+<h3>Taj Mahal</h3>
+<p>Agra Wonder</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1200&auto=format&fit=crop">
+<h3>Kerala</h3>
+<p>God's Own Country</p>
+</div>
+</div>
+</section>
+
+<section class="popular">
+<h2>International Destinations</h2>
+
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop">
+<h3>Paris</h3>
+<p>France</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop">
+<h3>Venice</h3>
+<p>Italy</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop">
+<h3>Berlin</h3>
+<p>Germany</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+<h3>Switzerland</h3>
+<p>Snow Mountains</p>
+</div>
+</div>
+</section>
+
+<section class="result" id="result"></section>
+
+<section class="payment">
+<h2>Unlock Premium AI Travel Plan</h2>
+<button onclick="payNow()">Pay Now ₹499</button>
+</section>
+
+</body>
+</html>
